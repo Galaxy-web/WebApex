@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apex Legends: Melhores Locais de Pouso</title>
+    <link rel="icon" href="logo.jfif" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #202020;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            transition: background-color 1s;
+        }
+        .header {
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    border-bottom: 3px solid #f0141e;
+}
+
+.logo {
+    width: 100px; /* Largura da logo */
+    height: auto; /* Altura ajustável proporcionalmente */
+    margin-right: 10px; /* Espaçamento à direita da logo */
+	border-radius: 50%;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff4d4d;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    background-color: #e60000;
+}
+
+.image-container {
+    position: relative;
+}
+
+.predator-emblem,
+.elimination-medal {
+    position: absolute;
+    width: 150px;
+    right: 0;
+    top: -167px;
+    filter: brightness(150%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover .predator-emblem {
+    transform: rotate(360deg);
+}
+
+.image-container:hover .elimination-medal {
+    transform: rotate(-360deg);
+}
+        #main {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .section {
+    border: 1px solid #50b3a2;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    transition: border 1s;
+    flex: 1; /* As sections ocuparão todo o espaço disponível */
+}
+        .section:hover {
+            border: 1px solid #e8491d;
+        }
+
+        #main {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as sections quebrem para a próxima linha */
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.carousel-container {
+    width: 100%;
+    background-color: #202020;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Adicione um espaçamento superior para separar do conteúdo acima */
+}
+
+
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    background-color: #202020;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-image {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s;
+}
+
+.carousel-image.active {
+    display: block;
+    opacity: 1;
+}
+
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Seu código existente
+    document.body.addEventListener('click', function() {
+        if (document.body.style.backgroundColor === 'rgb(32, 32, 32)') {
+            document.body.style.backgroundColor = '#50b3a2';
+            document.querySelector('h1').style.color = '#202020';
+        } else {
+            document.body.style.backgroundColor = '#202020';
+            document.querySelector('h1').style.color = '#fff';
+        }
+    });
+
+            // Código do carrossel
+            var images = Array.from(document.querySelectorAll('.carousel-image'));
+            var currentIndex = 0;
+
+            // Títulos para cada imagem no carrossel
+            var titles = [
+                "Melhor lugar para pegar kill em início de partida",
+                "Melhor lugar para buscar recursos",
+                "Outro lugar importante...",
+                // Adicione mais títulos conforme necessário
+            ];
+
+            // Inicializar o título
+            document.querySelector('.carousel-caption').innerText = titles[currentIndex];
+
+            document.getElementById('prev').addEventListener('click', function() {
+                images[currentIndex].classList.remove('active');
+                currentIndex--;
+                if (currentIndex < 0) {
+                    currentIndex = images.length - 1;
+                }
+                images[currentIndex].classList.add('active');
+                document.querySelector('.carousel-caption').innerText = titles[currentIndex];
+            });
+
+            document.getElementById('next').addEventListener('click', function() {
+                images[currentIndex].classList.remove('active');
+                currentIndex++;
+                if (currentIndex >= images.length) {
+                    currentIndex = 0;
+                }
+                images[currentIndex].classList.add('active');
+                document.querySelector('.carousel-caption').innerText = titles[currentIndex];
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jfif" alt="Logo do Apex Legends" class="logo">
+        <h1>Apex Legends: Melhores Locais de Pouso</h1>
+        <p>Os melhores locais de pouso:</p>
+        <div class="image-container">
+            <img src="predador1.png" alt="Emblema Predador" class="predator-emblem">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="melhores.html">Personagens mais utilizados</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+        </ul>
+    </div>
+    <main id="main">
+        <section class="section">
+            <h2><i class="fas fa-crosshairs"></i> Mais Kills no Início do Jogo</h2>
+            <p>Se você está procurando ação rápida e muitas kills no início do jogo, tente pousar em locais populares como Skull Town ou Bunker.</p>
+            <h3>Dicas para jogadores iniciantes:</h3>
+            <ul>
+                <li><i class="fas fa-angle-right"></i> Fique perto de sua equipe. É mais fácil sobreviver quando você pode apoiar uns aos outros.</li>
+                <li><i class="fas fa-angle-right"></i> Aprenda a usar o sistema de ping. Isso permite que você comunique informações importantes para sua equipe sem precisar usar o chat de voz.</li>
+                <li><i class="fas fa-angle-right"></i> Pratique o uso de diferentes armas no campo de treinamento. Cada arma em Apex Legends tem um recuo único que você precisará controlar para atirar com precisão.</li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2><i class="fas fa-search-dollar"></i> Busca de Ótimos Recursos</h2>
+            <p>Se você está mais interessado em saquear e se equipar para o final do jogo, tente pousar em áreas menos populares com alto potencial de saque, como Airbase ou Swamps.</p>
+            <h3>Dicas para jogadores iniciantes:</h3>
+            <ul>
+                <li><i class="fas fa-angle-right"></i> Use o mapa para encontrar áreas de alto valor de saque. Essas áreas geralmente têm mais caixas de saque e uma chance maior de encontrar equipamentos de alta qualidade.</li>
+                <li><i class="fas fa-angle-right"></i> Fique atento ao círculo. Você não quer ser pego fora do círculo, pois isso pode causar danos significativos.</li>
+                <li><i class="fas fa-angle-right"></i> Aprenda a distinguir entre os diferentes tipos de armadura. Armaduras de nível superior fornecem mais proteção.</li>
+            </ul>
+        </section>
+
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="thunderdome.jpg" alt="Local 1" class="carousel-image active">
+                <img src="relay.webp" alt="Local 2" class="carousel-image">
+                <!-- Adicione mais imagens conforme necessário -->
+                <button id="prev">Anterior</button>
+                <button id="next">Próximo</button>
+            </div>
+        
+            <div class="carousel-caption"></div>
+        </div>        
+        
+    </main>
+</body>
+</html>

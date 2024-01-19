@@ -1,0 +1,125 @@
+/* Reset de estilos para garantir uma base consistente */
+body, h1, h2, h3, p, img {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #282c34;
+    color: #61dafb;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px; /* Largura da logo */
+    height: auto; /* Altura ajustável proporcionalmente */
+    margin-right: 10px; /* Espaçamento à direita da logo */
+	border-radius: 50%;
+}
+
+/* Estilo da seção principal */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo da seção 'leading-page' (destaque) */
+.leading-page {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero {
+    background-color: #282c34;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #61dafb;
+}
+
+/* Estilo dos botões */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #61dafb;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2196F3;
+}
+
+/* Estilo da seção 'blog-page' */
+.blog-page {
+    text-align: center;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Estilo da seção 'webcraft' */
+.webcraft {
+    background-color: #282c34;
+    color: #61dafb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Estilização para o botão WebCraft */
+.btn-webcraft {
+    display: inline-block; /* Permite que o botão respeite o tamanho do conteúdo */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto no botão */
+    text-decoration: none; /* Remove a decoração de texto padrão do link */
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor de fundo */
+}
+
+/* Estilização para o hover do botão WebCraft */
+.btn-webcraft:hover {
+    background-color: #0056b3; /* Cor de fundo alterada no hover */
+}
+
+
+/* Estilo do rodapé */
+footer {
+    background-color: #282c34;
+    color: #61dafb;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo do rodapé - Copyright */
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,256 @@
+/* Estilos globais */
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #202020;
+	color: #fff;
+}
+
+/* Cabeçalho */
+header {
+	background-color: #ff0000;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.logo {
+    width: 100px; /* Largura da logo */
+    height: auto; /* Altura ajustável proporcionalmente */
+    margin-right: 10px; /* Espaçamento à direita da logo */
+	border-radius: 50%;
+}
+
+h1 {
+	font-size: 36px;
+	margin: 0;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	margin-left: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Seção de herói */
+.hero {
+    background: url('gif1.gif') center/cover no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    position: relative; /* Adicionado para posicionar o conteúdo sobre o GIF */
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+    background-color: #f0141e;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero .cta:hover {
+    background-color: #c00;
+}
+
+/* Adicionando estilos para garantir boa legibilidade do conteúdo sobre o GIF */
+.hero h2,
+.hero p,
+.hero .cta {
+    z-index: 1; /* Garante que o conteúdo esteja acima do fundo */
+    position: relative;
+}
+
+/* Adicionando uma sobreposição escura para melhor legibilidade do texto */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0; /* Colocado abaixo do conteúdo */
+}
+
+
+.cta {
+	background-color: #fff;
+	border: none;
+	border-radius: 5px;
+	color: #202020;
+	font-size: 24px;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+.cta:hover {
+	background-color: #202020;
+	color: #fff;
+}
+
+/* Seção de destaque */
+.featured {
+	background-color: #ff0000;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 50px;
+    color: #161616;
+}
+
+.featured h2 {
+	font-size: 36px;
+	margin: 0;
+    color: #fff;
+}
+
+.featured article {
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	flex-basis: calc(50% - 20px);
+	padding: 20px;
+}
+
+.featured img {
+	border-radius: 5px;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.featured h3 {
+	font-size: 24px;
+	margin: 20px 0 10px;
+}
+
+.featured p {
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+.featured a {
+	background-color: #fff;
+	border: none;
+	border-radius: 5px;
+	color: #202020;
+	display: block;
+	font-size: 16px;
+	margin-top: 20px;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.featured a:hover {
+	background-color: #202020;
+	color: #fff;
+}
+
+/* Seção de blog */
+.blog {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 50px;
+    color: #161616;
+}
+
+.blog h2 {
+	font-size: 36px;
+	margin: 0;
+    color: #fff;
+}
+
+.blog article {
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	flex-basis: calc(33.33% - 20px);
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+.blog img {
+	border-radius: 5px;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.blog h3 {
+	font-size: 24px;
+	margin: 20px 0 10px;
+}
+
+.blog p {
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+.blog a {
+	background-color: #fff;
+	border: none;
+	border-radius: 5px;
+	color: #161616;
+	display: block;
+	font-size: 16px;
+	margin-top: 20px;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.blog a:hover {
+	background-color: #202020;
+	color: #fff;
+}
+
+/* Rodapé */
+footer {
+	background-color: #ff0000;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+footer p {
+	font-size: 16px;
+	margin: 0;
+}

@@ -1,0 +1,155 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.header {
+    background-color: #282c34;
+    color: #61dafb;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    width: 100px; /* Largura da logo */
+    height: auto; /* Altura ajustável proporcionalmente */
+    margin-right: 10px; /* Espaçamento à direita da logo */
+	border-radius: 50%;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.predator-emblem,
+.elimination-medal {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #61dafb;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #2196F3;
+}
+
+.section {
+    max-width: 800px;
+    margin: 100px auto;
+}
+
+h2 {
+    color: #61dafb;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.champion {
+    background-color: #282c34;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+.champion img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+select {
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    background-color: #282c34;
+    color: #61dafb;
+    border: 2px solid #61dafb;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+select:hover,
+select:focus {
+    background-color: #61dafb;
+    color: #282c34;
+    border-color: #282c34;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    border-radius: 15px;
+    background: #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.video-container i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: #61dafb;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.video-container i:hover {
+    color: #2196F3;
+}

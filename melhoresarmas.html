@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As armas mais utilizadas</title>
+    <link rel="icon" href="logo.jfif" type="image/png">
+    <link rel="stylesheet" href="arma.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jfif" alt="Logo do Apex Legends" class="logo">
+        <h1>Saiba como utilizar as armas mais utilizadas no Jogo:</h1>
+        <p>Conheça agora as armas mais utilizadas pelos Metas, e o porque elas se tornam tão poderosas.</p>
+        <div class="image-container">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tutors.html">Dicas de jogo</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+        </ul>
+    </div>
+    <!--section de champions-->
+<div class="section">
+    <h2>As armas mais utilizada na Temporada 19 são:</h2>
+
+    <!-- Campeão 1: Horizon -->
+    <div class="champion">
+        <img src="R-99.png" alt="horizon">
+        <h3>R-99 SMg</h3>
+        <p> É uma submetralhadora que é muito eficaz em combates de curta distância. Ela é capaz de causar danos significativos em um curto espaço de tempo. É uma das armas mais populares entre os jogadores</p>
+
+        <!-- Opção para escolher entre "Melhores Jogadas", "Tutorial" e "Nenhum" -->
+        <label for="horizon-video-option">Escolha o vídeo:</label>
+        <select id="horizon-video-option" onchange="changeVideo('horizon')">
+            <option value="nenhum" selected>Nenhum</option>
+            <option value="melhores-jogadas">Melhores Jogadas</option>
+            <option value="tutorial">Como ela funciona?</option>
+        </select>
+
+        <!-- Vídeo selecionado -->
+        <div class="video-container" id="horizon-video-container">
+            <!-- Vídeo será adicionado dinamicamente via JavaScript -->
+            <i class="far fa-play-circle"></i>
+        </div>
+    </div>
+
+    <!-- Campeão 2: Blaterroud -->
+    <div class="champion">
+        <img src="flatline.png" alt="blaterroud">
+        <h3>VK-47 Flatline</h3>
+        <p>É um fuzil de assalto que é eficaz em combates de média e longa distância. Ele tem um recuo controlável e pode causar danos significativos</p>
+
+        <!-- Opção para escolher entre "Melhores Jogadas", "Tutorial" e "Nenhum" -->
+        <label for="blaterroud-video-option">Escolha o vídeo:</label>
+        <select id="blaterroud-video-option" onchange="changeVideo('blaterroud')">
+            <option value="nenhum" selected>Nenhum</option>
+            <option value="melhores-jogadas">Melhores Jogadas</option>
+            <option value="tutorial">Como ela funciona?</option>
+        </select>
+
+        <!-- Vídeo selecionado -->
+        <div class="video-container" id="blaterroud-video-container">
+            <!-- Vídeo será adicionado dinamicamente via JavaScript -->
+            <i class="far fa-play-circle"></i>
+        </div>
+    </div>
+
+    <div class="champion">
+        <img src="imagens/R-301.png" alt="Wraith">
+        <h3>R-301</h3>
+        <p>É um fuzil de assalto que é eficaz em combates de média e longa distância. Ele tem um recuo controlável e pode causar danos significativos</p>
+
+        <!-- Opção para escolher entre "Melhores Jogadas", "Tutorial" e "Nenhum" -->
+        <label for="blaterroud-video-option">Escolha o vídeo:</label>
+        <select id="blaterroud-video-option" onchange="changeVideo('blaterroud')">
+            <option value="nenhum" selected>Nenhum</option>
+            <option value="melhores-jogadas">Melhores Jogadas</option>
+            <option value="tutorial">Como ela funciona?</option>
+        </select>
+
+        <!-- Vídeo selecionado -->
+        <div class="video-container" id="blaterroud-video-container">
+            <!-- Vídeo será adicionado dinamicamente via JavaScript -->
+            <i class="far fa-play-circle"></i>
+        </div>
+    </div>
+
+    <div class="champion">
+        <img src="30-30.png" alt="Wraith">
+        <h3>30-30</h3>
+        <p>É um rifle de precisão que é eficaz em combates de média e longa distância. Ele tem um tempo de recarga rápido e pode causar danos significativos</p>
+
+        <!-- Opção para escolher entre "Melhores Jogadas", "Tutorial" e "Nenhum" -->
+        <label for="blaterroud-video-option">Escolha o vídeo:</label>
+        <select id="blaterroud-video-option" onchange="changeVideo('blaterroud')">
+            <option value="nenhum" selected>Nenhum</option>
+            <option value="melhores-jogadas">Melhores Jogadas</option>
+            <option value="tutorial">Como ela funciona?</option>
+        </select>
+
+        <!-- Vídeo selecionado -->
+        <div class="video-container" id="blaterroud-video-container">
+            <!-- Vídeo será adicionado dinamicamente via JavaScript -->
+            <i class="far fa-play-circle"></i>
+        </div>
+    </div>
+
+    <!-- Adicione mais armas conforme necessário -->
+</div>
+
+<script src="App.js"></script>
+</body>
+</html>

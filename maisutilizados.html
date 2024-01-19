@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagens mais utilizados</title>
+    <link rel="icon" href="logo.jfif" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jfif" alt="Logo do Apex Legends" class="logo">
+        <h1>Apex Legends Blog</h1>
+        <p>O melhor lugar para notícias e atualizações do Apex Legends!</p>
+        <div class="image-container">
+            <img src="predador1.png" alt="Emblema Predador" class="predator-emblem">
+            <img src="kill leader.webp" alt="Medalha de 20 eliminações" class="elimination-medal">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tutors.html">Dicas de jogo</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+        </ul>
+    </div>
+    <!--section de champions-->
+<div class="section">
+    <h2>Campeões Mais Usados na Temporada 19</h2>
+
+    <!-- Campeão 1: Horizon -->
+    <div class="champion">
+        <img src="horizon1.jpg" alt="horizon">
+        <h3>Horizon</h3>
+        <p>Horizon é uma personagem popular em Apex Legends devido à sua habilidade de manipular a gravidade...</p>
+
+        <!-- Opção para escolher entre "Melhores Jogadas", "Tutorial" e "Nenhum" -->
+        <label for="horizon-video-option">Escolha o vídeo:</label>
+        <select id="horizon-video-option" onchange="changeVideo('horizon')">
+            <option value="nenhum" selected>Nenhum</option>
+            <option value="melhores-jogadas">Melhores Jogadas</option>
+            <option value="tutorial">Tutorial</option>
+        </select>
+
+        <!-- Vídeo selecionado -->
+        <div class="video-container" id="horizon-video-container">
+            <!-- Vídeo será adicionado dinamicamente via JavaScript -->
+            <i class="far fa-play-circle"></i>
+        </div>
+    </div>
+
+    <!-- Campeão 2: Blaterroud -->
+    <div class="champion">
+        <img src="bloodhound.jfif" alt="blaterroud">
+        <h3>Blaterroud</h3>
+        <p>Blaterroud é um novo campeão com habilidades incríveis...</p>
+
+        <!-- Opção para escolher entre "Melhores Jogadas", "Tutorial" e "Nenhum" -->
+        <label for="blaterroud-video-option">Escolha o vídeo:</label>
+        <select id="blaterroud-video-option" onchange="changeVideo('blaterroud')">
+            <option value="nenhum" selected>Nenhum</option>
+            <option value="melhores-jogadas">Melhores Jogadas</option>
+            <option value="tutorial">Tutorial</option>
+        </select>
+
+        <!-- Vídeo selecionado -->
+        <div class="video-container" id="blaterroud-video-container">
+            <!-- Vídeo será adicionado dinamicamente via JavaScript -->
+            <i class="far fa-play-circle"></i>
+        </div>
+    </div>
+
+    <div class="champion">
+        <img src="wraith.jpg" alt="Wraith">
+        <h3>Wraith</h3>
+        <p>Blaterroud é um novo campeão com habilidades incríveis...</p>
+
+        <!-- Opção para escolher entre "Melhores Jogadas", "Tutorial" e "Nenhum" -->
+        <label for="blaterroud-video-option">Escolha o vídeo:</label>
+        <select id="blaterroud-video-option" onchange="changeVideo('blaterroud')">
+            <option value="nenhum" selected>Nenhum</option>
+            <option value="melhores-jogadas">Melhores Jogadas</option>
+            <option value="tutorial">Tutorial</option>
+        </select>
+
+        <!-- Vídeo selecionado -->
+        <div class="video-container" id="blaterroud-video-container">
+            <!-- Vídeo será adicionado dinamicamente via JavaScript -->
+            <i class="far fa-play-circle"></i>
+        </div>
+    </div>
+
+    <!-- Adicione mais campeões conforme necessário -->
+</div>
+
+<script src="App.js"></script>
+</body>
+</html>
